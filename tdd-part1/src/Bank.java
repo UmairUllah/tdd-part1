@@ -5,7 +5,7 @@ public class Bank {
 	private Hashtable rates = new Hashtable();
 	
 	public Money reduce(Expression source, String to) {
-		return source.reduce(to);
+		return source.reduce(this,to);
 	}
 	
 	int rate(String from, String to){
