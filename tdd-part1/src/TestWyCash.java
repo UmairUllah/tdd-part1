@@ -63,11 +63,6 @@ public class TestWyCash extends TestCase {
 		bank.addRate("CHF", "USD", 2);
 		Money result = bank.reduce(Money.franc(2), "USD");
 		assertEquals(Money.dollar(1), result);
-	}
-	
-	@Test
-	public void testArrayEquals() {
-		assertEquals(new Object[]{"abc"}, new Object[]{"abc"});
 	}	
 	
 	@Test 
