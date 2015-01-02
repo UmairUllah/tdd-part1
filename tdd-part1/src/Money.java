@@ -1,5 +1,5 @@
 
-public class Money {
+public class Money implements Expression {
  	protected int amount;
  	protected String currency;
  	
@@ -37,7 +37,11 @@ public class Money {
 	}
 	
 	public Expression plus(Money addend) {
-		return new Money( amount + addend.amount,currency);
+		return new Sum( this, addend );
+	}
+	
+	public Money reduce( String to ) {
+		return this;
 	}
 	
 }
