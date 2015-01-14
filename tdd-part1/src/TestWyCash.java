@@ -1,8 +1,7 @@
+import static org.junit.Assert.*;
 import org.junit.Test;
-import junit.framework.TestCase;
 
-
-public class TestWyCash extends TestCase {
+public class TestWyCash {
 
 	@Test
 	public void testMultiplication() {
